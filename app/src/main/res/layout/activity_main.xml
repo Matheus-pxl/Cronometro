@@ -19,6 +19,7 @@
         app:layout_constraintVertical_bias="0.3">
 
         <ProgressBar
+            android:id="@+id/prograss_bar_timer"
             style="@style/Widget.AppCompat.ProgressBar.Horizontal"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -39,6 +40,7 @@
             android:orientation="vertical">
 
             <TextView
+                android:id="@+id/text_time_left"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
@@ -70,10 +72,14 @@
         app:layout_constraintTop_toBottomOf="@id/FrameLayoutTimer" />
 
     <TextView
+        android:id="@+id/textAdd15s"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:focusable="true"
         android:text="@string/_15s"
+        android:layout_marginTop="32dp"
+        android:layout_marginStart="64dp"
+        app:layout_constraintVertical_bias="0"
         app:layout_constraintTop_toBottomOf="@id/btnAdd"
         android:textSize="24sp"
         android:textStyle="bold"
@@ -82,8 +88,11 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <ImageButton
+        android:id="@+id/bt_reset"
         android:layout_width="40dp"
         android:layout_height="40dp"
+        android:layout_marginEnd="64dp"
+        app:layout_constraintVertical_bias="0"
         app:layout_constraintTop_toBottomOf="@id/btnAdd"
         android:layout_marginTop="32dp"
         android:background="@color/white"
@@ -93,10 +102,16 @@
         app:layout_constraintBottom_toBottomOf="parent" />
 
     <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/bt_play_pause"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         android:layout_width="284dp"
+        android:layout_marginBottom="32dp"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        android:background="@drawable/button_bg"
+        android:text="Start"
         android:layout_height="wrap_content">
 
     </androidx.appcompat.widget.AppCompatButton>
