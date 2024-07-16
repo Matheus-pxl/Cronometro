@@ -29,7 +29,7 @@
             android:max="10"
             android:progress="10"
             android:progressDrawable="@drawable/blue_progressbar_background"
-            android:rotation="90">
+            android:rotation="-90">
 
         </ProgressBar>
 
@@ -45,8 +45,8 @@
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:text="0"
-                android:textColor="@color/max_blue"
-                android:textSize="26sp"
+                android:textColor="@color/black"
+                android:textSize="32sp"
                 android:textStyle="bold" />
 
             <TextView
